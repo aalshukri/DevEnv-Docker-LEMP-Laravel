@@ -1,0 +1,25 @@
+version: "3.3"
+
+networks:
+  # docker internal network
+  lempnet:
+    driver: bridge
+
+services:
+
+  # LEMP Server from image
+  app:
+    image: lemp-dev:latest
+    container_name: laravelwebapp
+    #restart: unless-stopped
+    env_file:
+      - .env
+    working_dir: /var/www/html/
+    ports:
+        - 80:80    
+        - 443:443
+    volumes:
+      - ../www:/var/www/html/
+    networks:
+      - lempnet
+    tty: true
