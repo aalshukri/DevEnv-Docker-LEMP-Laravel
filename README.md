@@ -1,6 +1,6 @@
 # DevEnv-Docker-LEMP-Laravel
 
-Development Environment using Docker implementing LEMP server hosting a Laravel application.
+Development Environment using Docker implementing LEMP server used for hosting Laravel applications.
 
 ## Build
 
