@@ -52,4 +52,5 @@ RUN apt-get update && apt-get install -y \
         nginx \
         mysql-server \
         mysql-client \
-        mysql-common
+        mysql-common \
+        php-xml
