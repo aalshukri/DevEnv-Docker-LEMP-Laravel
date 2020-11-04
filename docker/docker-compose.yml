@@ -14,6 +14,9 @@ services:
     #restart: unless-stopped
     env_file:
       - .env
+    #command: bash -c "set >> /etc/environment"  
+    #command: sh -c set >> /etc/environment
+    #command: bash -c echo "g"
     working_dir: /var/www/html/
     ports:
         - 80:80    
@@ -23,3 +26,7 @@ services:
     networks:
       - lempnet
     tty: true
+    #entrypoint: ["sh", "-c", "set"]
+    #command: ["sh", "-c", "set"]
+    #command: ["sh", "-c", "set"]
+    #command: ["sh", "-c", "tail -f /dev/null"]
