@@ -70,6 +70,6 @@ Served from folder '/www/laravelwebapp/index.html'
 
 ___
 
-Credits <a href="https://github.com/shyammohammed">@shyammohammed</a>
+Credit goes to <a href="https://github.com/shyammohammed">@shyammohammed</a>
 who helped develop this as part of <a href="https://github.com/OCTRU">@OCTRU</a>
 (Oxford Clinical Trials Research Unit).
