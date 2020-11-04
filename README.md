@@ -13,9 +13,11 @@ Once built, you can simply run the application each time you need this developme
 1. Build the base image.
 
 `> cd docker/lemp-base`
+
 `> docker build . -t lemp-dev-base`
 
 Check image with name 'lemp-dev-base' has been created
+
 `> docker images`
 
 
@@ -24,6 +26,7 @@ Check image with name 'lemp-dev-base' has been created
 Move into directory 'docker/lemp-dev'.
 
 `> cd ..`
+
 `> cd lemp-dev`
 
 Build the application image
@@ -31,6 +34,7 @@ Build the application image
 `> docker build . -t lemp-dev`
 
 Again, to check this image was created run the command and look for 'lemp-dev' has been created
+
 `> docker images`
 
 
@@ -45,6 +49,7 @@ This will start a docker container named 'laravelwebapp'.
 serving up the contents of folder '/www/'.
 
 To connect directly to this container (LEMP server)
+
 `> docker exec -it laravelwebapp /bin/bash`
 
 To stop the docker container use
