@@ -2,7 +2,7 @@
 
 Development Environment using Docker implementing a LEMP server used for hosting Laravel applications.
 
-[LEMP] = Ubuntu 18.04 Base Image - Nginx + MySQL + PHP 7.2 
+[LEMP] = Ubuntu 18.04 Base Image + Nginx + MySQL + PHP 7.2 
 
 
 ## Build
