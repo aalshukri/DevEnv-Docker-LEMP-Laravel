@@ -10,10 +10,8 @@ COPY ./conf/nginx_default.conf /etc/nginx/sites-available/default
 COPY ./conf/php_www.conf /etc/php/7.2/fpm/pool.d/www.conf
 RUN echo "<?php phpinfo();?>" > /var/www/html/info.php
 
-#setup
+#Copy setup scripts
 COPY ./setup /setup
-#RUN mysql -h localhost --protocol=tcp < /setup/laravel.sql
-#RUN chmod +x /setup/setup.sh
 
 #Copy startup script
 COPY ./conf/stack-startup.sh /usr/bin/stack-startup.sh
