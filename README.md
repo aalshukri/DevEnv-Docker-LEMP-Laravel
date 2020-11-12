@@ -69,11 +69,11 @@ Served from folder '/www/index.html'
 
 or
 
-https://localhost/laravelwebapp/index.html
+https://localhost/laravelwebapp/
 
-https://127.0.0.1/laravelwebapp/index.html
+https://127.0.0.1/laravelwebapp/
 
-Served from folder '/www/laravelwebapp/index.html'
+Served from Laravel application '/www/laravelwebapp/public'
 
 ___
 
