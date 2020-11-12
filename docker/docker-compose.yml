@@ -23,13 +23,3 @@ services:
     networks:
       - lempnet          
     tty: true
-    #entrypoint: ["sh", "-c", "set"]
-    #command: ["sh", "-c", "set"]
-    #command: ["sh", "-c", "set"]
-    #command: ["sh", "-c", "tail -f /dev/null"]
-    #command: ["mysql -u root -p < /setup/laravel.sql"]
-    #command: ["sh", "mysql < /setup/laravel.sql"]
-    #command: ["sh", "/setup/setup.sh"]
-    #entrypoint: ["sh", "/setup/setup.sh"]
-    #command: ["mysql -h 127.0.0.1 -P 3306 --protocol=tcp < /setup/laravel.sql"]
-    #command: ["ls -l /"]
