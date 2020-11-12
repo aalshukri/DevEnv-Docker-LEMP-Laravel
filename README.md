@@ -62,6 +62,7 @@ To stop the docker container use
 View web page at the following url 
 
 https://localhost/index.html
+
 https://127.0.0.1/index.html
 
 Served from folder '/www/index.html'
@@ -69,6 +70,7 @@ Served from folder '/www/index.html'
 or
 
 https://localhost/laravelwebapp/index.html
+
 https://127.0.0.1/laravelwebapp/index.html
 
 Served from folder '/www/laravelwebapp/index.html'
