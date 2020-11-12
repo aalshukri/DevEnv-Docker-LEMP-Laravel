@@ -5,6 +5,23 @@ Development Environment using Docker implementing a LEMP server used for hosting
 [LEMP] = Ubuntu 18.04 Base Image + Nginx + MySQL + PHP 7.2 
 
 
+## Quick Start Guide
+
+To get this docker container up and running simply build and start using the following commands from within the `docker` directory.
+
+`> cd docker`
+`> ./build.sh`
+`> ./start.sh`
+
+You can access the application at `https://127.0.0.1/laravelwebapp/`
+
+Once finished call the stop command to bring down docker container and application.
+
+`> ./stop.sh`
+
+The following section provides further details on the docker methods used.
+
+
 ## Build
 
 You only need to build the application once.
