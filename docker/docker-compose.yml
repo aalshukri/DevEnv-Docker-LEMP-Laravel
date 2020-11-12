@@ -10,23 +10,26 @@ services:
   # LEMP Server from image
   app:
     image: lemp-dev:latest
-    container_name: laravelwebapp
-    #restart: unless-stopped
+    container_name: laravelwebapp    
     env_file:
       - .env
-    #command: bash -c "set >> /etc/environment"  
-    #command: sh -c set >> /etc/environment
-    #command: bash -c echo "g"
     working_dir: /var/www/html/
     ports:
         - 80:80    
         - 443:443
     volumes:
       - ../www:/var/www/html/
+#      - ./setup:/setup/
     networks:
-      - lempnet
+      - lempnet          
     tty: true
     #entrypoint: ["sh", "-c", "set"]
     #command: ["sh", "-c", "set"]
     #command: ["sh", "-c", "set"]
     #command: ["sh", "-c", "tail -f /dev/null"]
+    #command: ["mysql -u root -p < /setup/laravel.sql"]
+    #command: ["sh", "mysql < /setup/laravel.sql"]
+    #command: ["sh", "/setup/setup.sh"]
+    #entrypoint: ["sh", "/setup/setup.sh"]
+    #command: ["mysql -h 127.0.0.1 -P 3306 --protocol=tcp < /setup/laravel.sql"]
+    #command: ["ls -l /"]
