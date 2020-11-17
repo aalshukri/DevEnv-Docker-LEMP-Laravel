@@ -105,10 +105,13 @@ Served from Laravel application '/www/laravelwebapp/public'
 Use the credentials in the command below to access mysql in your docker container.
 
 Host: 0.0.0.0
+
 User: laravel_user
+
 Password: password
 
-> mysql -h 0.0.0.0 -u laravel_user -p 
+
+`> mysql -h 0.0.0.0 -u laravel_user -p`
 
 
 ___
