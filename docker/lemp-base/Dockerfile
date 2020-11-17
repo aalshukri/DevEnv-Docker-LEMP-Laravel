@@ -53,4 +53,5 @@ RUN apt-get update && apt-get install -y \
         mysql-server \
         mysql-client \
         mysql-common \
-        php-xml
+        php-xml \
+        php-curl
