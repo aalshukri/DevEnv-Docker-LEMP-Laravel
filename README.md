@@ -99,6 +99,18 @@ https://127.0.0.1/laravelwebapp/
 
 Served from Laravel application '/www/laravelwebapp/public'
 
+
+#### MySQL
+
+Use the credentials in the command below to access mysql in your docker container.
+
+Host: 0.0.0.0
+User: laravel_user
+Password: password
+
+> mysql -h 0.0.0.0 -u laravel_user -p 
+
+
 ___
 
 Credit goes to <a href="https://github.com/shyammohammed">@shyammohammed</a>
