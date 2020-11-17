@@ -10,7 +10,9 @@ Development Environment using Docker implementing a LEMP server used for hosting
 To get this docker container up and running simply build and start using the following commands from within the `docker` directory.
 
 `> cd docker`
+
 `> ./build.sh`
+
 `> ./start.sh`
 
 You can access the application at `https://127.0.0.1/laravelwebapp/`
