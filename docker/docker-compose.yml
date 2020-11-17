@@ -9,7 +9,7 @@ services:
 
   # LEMP Server from image
   app:
-    image: lemp-dev:latest
+    image: lemp-dev:v1
     container_name: laravelwebapp    
     env_file:
       - .env

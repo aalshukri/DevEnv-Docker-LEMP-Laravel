@@ -6,7 +6,7 @@
 #
 
 # Build lemp-base image 
-docker build lemp-base/ -t lemp-dev-base
+docker build lemp-base/ -t lemp-dev-base:v1
 
 # Build lemp-dev image using lemp-base
-docker build lemp-dev/ -t lemp-dev
+docker build lemp-dev/ -t lemp-dev:v1

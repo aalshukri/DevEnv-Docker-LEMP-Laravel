@@ -1,5 +1,5 @@
 #TRIAGE Dev Image
-FROM lemp-dev-base:latest
+FROM lemp-dev-base:v1
 
 #Label
 LABEL version="0.1"
@@ -11,7 +11,7 @@ COPY ./conf/php_www.conf /etc/php/7.2/fpm/pool.d/www.conf
 RUN echo "<?php phpinfo();?>" > /var/www/html/info.php
 
 #mysql
-COPY ./conf/mysqld.cnf /etc/mysql/mysql.conf.d/mysqld.cnf
+COPY ./conf/my.cnf /etc/mysql/my.cnf
 
 
 #Copy setup scripts
