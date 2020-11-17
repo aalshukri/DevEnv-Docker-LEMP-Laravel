@@ -21,7 +21,12 @@ Once finished call the stop command to bring down docker container and applicati
 
 `> ./stop.sh`
 
-The following section provides further details on the docker methods used.
+While the docker container is running, ie after running `./start` you can connect to the server to run commands as if you would any other server. Use the following command to connect
+
+`> ./connect.sh`
+
+
+The following section provides further details on the docker methods used within each script.
 
 
 ## Build
