@@ -10,6 +10,10 @@ COPY ./conf/nginx_default.conf /etc/nginx/sites-available/default
 COPY ./conf/php_www.conf /etc/php/7.2/fpm/pool.d/www.conf
 RUN echo "<?php phpinfo();?>" > /var/www/html/info.php
 
+#mysql
+COPY ./conf/mysqld.cnf /etc/mysql/mysql.conf.d/mysqld.cnf
+
+
 #Copy setup scripts
 COPY ./setup /setup
 
