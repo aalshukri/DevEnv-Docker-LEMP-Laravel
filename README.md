@@ -83,6 +83,20 @@ To stop the docker container use
 `> docker-compose down`
 
 
+## Setup
+
+The first time you build and run your docker container, 
+you will need to execute a setup process.
+This is essentially a composer install command 
+to install necessary components for Laravel application
+
+`> docker exec -it laravelwebapp /bin/bash`
+
+`> cd /var/www/html/laravelwebapp`
+
+`> composer install`
+
+
 ## Access 
 
 View web page at the following url 
