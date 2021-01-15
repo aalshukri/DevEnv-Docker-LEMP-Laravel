@@ -15,6 +15,8 @@ To get this docker container up and running simply build and start using the fol
 
 `> ./start.sh`
 
+`> ./setup.sh`
+
 You can access the application at `https://127.0.0.1/laravelwebapp/`
 
 Once finished call the stop command to bring down docker container and application.
